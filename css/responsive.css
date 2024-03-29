@@ -11,7 +11,7 @@
   .carousel-bg {
     /* background: linear-gradient(rgba(4, 24, 44, 0.87), rgba(8, 16, 124, 0.863)), */
       /* url("../assets/img/bg/bg-1.jpg"); */
-    height: 60vh;
+    height: 68vh auto;
   }
   .carousel-bg, .carousel-caption p {
     padding: 20px;
