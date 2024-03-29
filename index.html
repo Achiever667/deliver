@@ -78,7 +78,7 @@
 
     <div
       id="carouselExampleControls"
-      class="carousel slide pt-5"
+      class="carousel slide "
       data-bs-ride="carousel"
     >
     <div class="carousel-content">
@@ -194,7 +194,27 @@ You can also find our Schedule An Appointment to contact get
           </div>
         </div></div>
         <!-- single slid section end  -->
-      </div></div>
+      </div>
+    <!-- Start Tracking Area -->
+
+                                  <section id="ft-booking-form" class="ft-booking-form-section p-4">
+                                     
+                                              <form  action="track-result.php" method="post" name="form" id="form">
+                                                <div class="row mx-auto z-shadow">
+                                                  <div class="col-md-5">
+                                                  <div class="booking-form-input-wrapper d-flex justify-content-center flex-wrap">
+                                                      <label class="booking-form-input position-relative "></label>
+                                                          <span class="booking-form-icon"><i class="flaticon-face-detection"></i></span>
+                                                          <input type="text" name="consignment_no" class="gentxt form-control mx-auto mb-4 p-3" id="consignment_no" placeholder="Your Tracking  ID Now">
+                                                        </div></div>
+                                                          <div class="col-md-5">
+                                                      <input class="btn px-3 btn-info" type="submit"name="Submit" type="submit" class="gentxt" onClick="MM_validateForm('consignment_no','','R');return document.MM_returnValue" value="Track now">
+                                                  </div></div>
+                                              </form>
+                                          
+                                      <!-- </div> -->
+                                  </section>
+    </div>
       <button
         class="carousel-control-prev"
         type="button"
@@ -1409,6 +1429,46 @@ Warehouse Storage.
     <!-- scroll-to-top  -->
     <a href="" id="scroll-to-top"></a>
 
+    <script language="javascript">
+      function validate()
+        {
+       if (form.consignment_no.value == "" )
+               {
+                  alert("Consignment No is required.");
+                  form.track.focus( );
+                  return false;
+              }
+          }
+      </script>
+
+
+  <script type="text/JavaScript">
+
+      function MM_findObj(n, d) { //v4.01
+        var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+          d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+        if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+        for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+        if(!x && d.getElementById) x=d.getElementById(n); return x;
+      }
+      
+      function MM_validateForm() { //v4.0
+        var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+        for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+          if (val) { nm=val.name; if ((val=val.value)!="") {
+            if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+              if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+            } else if (test!='R') { num = parseFloat(val);
+              if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+              if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+                min=test.substring(8,p); max=test.substring(p+1);
+                if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+          } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+        } if (errors) alert('The following error(s) occurred:\n'+errors);
+        document.MM_returnValue = (errors == '');
+      }
+          
+      </script>
     <!-- jQuery js  -->
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <!-- bootstrap@5.0.2 js  -->

@@ -24,7 +24,7 @@ ul {
 }
 .z-shadow, .swiper-slide,.col-md-4,.col-md-3,.col-md-12,.col-md-6{
   padding: 10px;
-  margin: 10px;
+  /* margin: 10px; */
   -webkit-box-shadow: 0px 10px 13px -7px #050938, 37px -21px 21px 5px rgba(0,0,0,0); 
 box-shadow: 0px 10px 13px -7px #050938, 37px -21px 21px 5px rgba(0,0,0,0); 
 }
@@ -153,6 +153,25 @@ padding: 5px;
   left: 0%;
   text-align: left;
 }
+.carousel-bg, .carousel-caption p {
+  /* padding: 20px; */
+  /* right: 0%; */
+  /* top: 20%; */
+  /* left: 10%; */
+  text-align: left;
+  font-size: 20px;
+}
+.carousel-caption .btn{
+  margin-left: 30px;
+}
+ .carousel-caption h2, .carousel-caption p{
+  padding: 20px;
+  /* right: 0%;
+  top: 20%;
+  left: 10%;
+  text-align: left;
+  font-size: 20px; */
+}
 
 .carousel-inner {
   text-align: left;
@@ -188,7 +207,7 @@ padding: 5px;
 .service-section .card {
   position: relative;
   background: #ffffff;
-  padding: 80px 20px 20px;
+  padding: 80px 0px 10px 0px;
   text-align: center;
   transition: all 300ms ease;
   margin-top: -50px;
