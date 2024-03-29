@@ -216,6 +216,25 @@ You can also find our Schedule An Appointment to contact get
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <!-- Start Tracking Area -->
+
+    <section id="ft-booking-form" class="ft-booking-form-section p-4">
+                                     
+      <form  action="track-result.php" method="post" name="form" id="form">
+        <div class="row mx-auto z-shadow">
+          <div class="col-md-5">
+          <div class="booking-form-input-wrapper d-flex justify-content-center flex-wrap">
+              <label class="booking-form-input position-relative "></label>
+                  <span class="booking-form-icon"><i class="flaticon-face-detection"></i></span>
+                  <input type="text" name="consignment_no" class="gentxt form-control mx-auto mb-4 p-3" id="consignment_no" placeholder="Your Tracking  ID Now">
+                </div></div>
+                  <div class="col-md-5">
+              <input class="btn px-3 btn-info" type="submit"name="Submit" type="submit" class="gentxt" onClick="MM_validateForm('consignment_no','','R');return document.MM_returnValue" value="Track now">
+          </div></div>
+      </form>
+  
+<!-- </div> -->
+</section>
     <!-- carousel section end -->
     <!-- service section start -->
     <div class="service-section py-5">
