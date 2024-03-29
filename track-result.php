@@ -141,7 +141,7 @@ h2, h4, h6 {
   display: inline-block;
 }
 
-.root {
+.root{
   margin: auto;
   padding: 3rem 1.5rem;
   border-radius: 5px;

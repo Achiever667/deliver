@@ -9,9 +9,9 @@ if(isset($_POST['txtusername'])){
 
 require_once('database.php');
 $server = "localhost";
-  $user ="root";
-  $pass ="";
-  $dbname ="courierci";
+  $user ="trusghbp_nimouser";
+  $pass ="nimouser12";
+  $dbname ="trusghbp_nimo";
   //create connection 
   $conn =mysqli_connect($server, $user, $pass, $dbname);
   //check connection

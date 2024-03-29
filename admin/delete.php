@@ -4,8 +4,8 @@ $id = $_GET['id'];
 //Create query based on the ID passed from you table
 //query : delete where Staff_id = $id
 // on success delete : redirect the page to original page using header() method
-$dbname = "courierci";
-$conn = mysqli_connect("localhost", "root", "", $dbname);
+$dbname = "trusghbp_nimo";
+$conn = mysqli_connect("localhost", "trusghbp_nimouser", "nimouser12"; $dbname);
 
 // Check connection
 if (!$conn) {
