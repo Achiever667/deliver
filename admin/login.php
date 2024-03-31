@@ -2,16 +2,15 @@
 session_start();
 error_reporting(0);
 
-require_once('database.php');
-require_once('library.php');
+require_once('./database.php');
+require_once('./library.php');
 $error = "";
 if(isset($_POST['txtusername'])){
 	$error = checkUser($_POST['txtusername'],$_POST['txtpassword'],$_POST['OfficeName']);
 }//if
 
-require_once('database.php');
-$sql = "SELECT DISTINCT(off_name)
-		FROM tbl_offices";
+require_once('./database.php');
+$sql = "SELECT DISTINCT(off_name) FROM tbl_offices";
 $result = dbQuery($sql);
 
 
@@ -35,27 +34,26 @@ header("registration.php");
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/mystyle.css" rel="stylesheet" type="text/css">
 <link href="css/form.css" rel="stylesheet" type="text/css">
+</head>
+
 <script language="javascript">
-<!--
- function memloginvalidate()
+
+function memloginvalidate()
 {
-   if(document.form1.txtusername.value == "")
+  if(document.form1.txtusername.value == "")
      {
         alert("Please enter admin UserName.");
         document.form1.txtusername.focus();
         return false;
      }
-   if(document.form1.txtpassword.value == "")
+  if(document.form1.txtpassword.value == "")
      {
         alert("Please enter admin Password.");
         document.form1.txtpassword.focus();
         return false;
      }
    } 
-
-//-->
-</script></head>
-
+</script>
 
 <body onLoad="document.form1.txtusername.focus();">
 <table id="Outer" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" align="center" width="780">
@@ -151,7 +149,7 @@ header("registration.php");
                               <tr>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
-                                <td><input name="Submit" class="green-button" value="Login" type="submit" style="">
+                                <td><input name="Submit" class="green-button" value="Login" type="submit">
                                
 
 

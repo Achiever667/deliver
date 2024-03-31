@@ -1,11 +1,15 @@
 <?php
 // database connection config
 $dbHost = 'localhost';
-$dbUser = 'trusghbp_nimouser';
-$dbPass = 'nimouser12';
-$dbName = 'trusghbp_nimo';
+$dbUser = 'nimotran_nimotransituser';
+$dbPass = 'nimotransituser12';
+$dbName = 'nimotran_nimotransit';
+// $dbHost = 'localhost';
+// $dbUser = 'root';
+// $dbPass = '';
+// $dbName = 'nimotransit';
 
- $dbConn = mysqli_connect ($dbHost, $dbUser, $dbPass) or die ('MySQL connect failed. ' . mysqli_error($dbConn));
+$dbConn = mysqli_connect($dbHost, $dbUser, $dbPass) or die ('MySQL connect failed. ' . mysqli_error($dbConn));
 mysqli_select_db($dbConn,$dbName) or die('Cannot select database. ' . mysqli_error($dbConn));
 
 function dbQuery($sql)

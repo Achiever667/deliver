@@ -7,9 +7,9 @@ isUser();
 ;
 // Check connection
 $db_host = 'localhost'; // Server Name
-$db_user = 'trusghbp_nimouser'; // Username
-$db_pass = 'nimouser12'; // Password
-$db_name = 'trusghbp_nimo'; // Database Name
+$db_user = 'nimotran_nimotransituser'; // Username
+$db_pass = 'nimotransituser12'; // Password
+$db_name = 'nimotran_nimotransit'; // Database Name
 
 $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 if (!$conn) {
