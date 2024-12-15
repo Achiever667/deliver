@@ -8,9 +8,9 @@ if(isset($_POST['txtusername'])){
 }//if
 require_once('database.php');
  $server = "localhost";
-  $user ="nimotran_nimotransituser";
-  $pass ="nimotransituser12";
-  $dbname ="nimotran_nimotransit";
+  $user ="expres_expressuser";
+  $pass ="expressuser12";
+  $dbname ="expres_express";
   //create connection 
   $conn =mysqli_connect($server, $user, $pass, $dbname);
   //check connection

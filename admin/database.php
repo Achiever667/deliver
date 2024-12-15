@@ -1,9 +1,9 @@
 <?php
 // database connection config
 $dbHost = 'localhost';
-$dbUser = 'nimotran_nimotransituser';
-$dbPass = 'nimotransituser12';
-$dbName = 'nimotran_nimotransit';
+$dbUser = 'expres_expressuser';
+$dbPass = 'expressuser12';
+$dbName = 'expres_express';
 // $dbHost = 'localhost';
 // $dbUser = 'root';
 // $dbPass = '';
